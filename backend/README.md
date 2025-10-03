@@ -65,7 +65,8 @@ source env/bin/activate
 source env/Scripts/activate
 ```
 
-If you want to deactivate the environment, simply type into the terminal:
+⚠️ **DON'T EXECUTE NOW!**  
+But after you are done and you want to deactivate the environment, simply type into the terminal:
 ```
 deactivate
 ```
@@ -82,11 +83,12 @@ pip install -r requirements.txt
 
 ### 2.4 Verify Installation
 ```bash
-# Make sure Flask is installed
-flask --version # should be 3.0.3
+# Make sure Flask is installed, check python version, and Werkzeug
+flask --version 
+# Flask should be 3.0.3
+# Werkzeug should be 3.0.4 
+# Python should be 3.12.x
 
-# Check Python version in env
-python --version  # should be 3.12.8
 ```
 
 ## Running the Application
