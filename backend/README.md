@@ -9,7 +9,7 @@ backend/
 ├── .flaskenv              # Flask configuration
 ├── .python-version        # Specifies Python 3.12.8
 ├── base.py                # Main Flask application
-├── README.pmd             # this :p
+├── README.pmd             # This :p
 ├── requirements.txt       # Python package dependencies
 ```
 
