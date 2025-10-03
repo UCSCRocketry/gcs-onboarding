@@ -91,11 +91,31 @@ flask --version
 
 ```
 
+## Doing and learning and doing and learning and ...
+Go through and understand all the files, what they do, how they work. They're pretty well commented. You will need to write the parser and there are some questions (ok only one question) you should answer commented throughout the code
+
+
 ## Running the Application
 
-### 1. Make sure the venv is activated
+### 1. Make sure the venv is activated and you are in the backend folder
 
 ### 2. Start the Flask development server
 ```bash
 flask run --port 9999
 ```
+Your terminal should say something like:
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 158-513-158
+ wsgi starting up on http://127.0.0.1:9999
+
+### 3. Test the endpoint /api/test 
+Open a new terminal and run this command: 
+
+```bash
+curl http://127.0.0.1:9999/api/test
+```
+
+If you dont know, research this (and any other) commands you dont know:
+* what is curl
+* (optional) what does cli mean  
