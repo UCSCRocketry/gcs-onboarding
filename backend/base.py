@@ -75,7 +75,7 @@ def send_state():
                        'num': len(state[s]),
                        'data': state[s]})
 
-#handles new client connections:updates user count, sends current state + ensures background generator/sender tasks are running right
+#handles new client connections: updates user count, sends current state + ensures background generator/sender tasks are running right
 @socketio.on("connect")
 def connect_msg():
     global thread, thread_update, connected_users
@@ -86,6 +86,7 @@ def connect_msg():
 
     send_state()
 
+    #only start update data thread if someones connected
     if thread_update is None:
         thread_update = socketio.start_background_task(update_data)
 
